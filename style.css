@@ -7,12 +7,14 @@
 .header
 {
     height: 60px;
-    /* background-color: aqua; */
+    width: 100%;
+    background-color: #364a53;
     box-sizing: border-box;
     padding: 0px 10%;
     display: flex;
     justify-content: space-between;
-    color: #2c7e62;
+    color: white;
+    position: fixed;
 }
 
 .logo
@@ -61,8 +63,8 @@
 .section
 {
     height: 100px;
-    padding: 0px 5%;
-    background-color: #2c7e62;
+    padding: 60px 5%;
+    background-color: #364a53;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -98,7 +100,7 @@
 .about
 {
     height: 200px;
-    background-color: #2c7e62;
+    background-color: #364a53;
     padding: 0px 0px;
     font-weight: bold;
     font-family: segoe UI;
@@ -117,14 +119,13 @@
 .content > p
 {
     color: white;
-    font-size: 18px;
-    font-style:normal;
-    font-family: sans-serif;
-    font-weight: lighter;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: 100;
     padding: 5px;
 }
 
-.content > h2
+.content > pre
 {
     font-style: oblique;
     font-size: 40px;
@@ -140,10 +141,10 @@
 {
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid #2c7e62;
+    border: 1px solid #364a53;
     font-weight: bold;
     font-size: 17px;
-    color: #2c7e62;
+    color: #364a53;
     background-color: white;
     cursor: pointer;
     transition: 3s;
@@ -154,9 +155,166 @@
     width: 50%;
 }
 
+/* css for footer  */
+
+.ender
+{
+    height: 237px;
+    width: 100%;
+    background-color: #222121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.ender-content
+{
+    padding-top: 20px;
+    padding: 0px 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+    color: white;
+}
+
+.start
+{
+    font-size: 20px;
+    font-family: calibri;
+    padding-top: 25px;
+}
+
+.startp
+{
+    font-family: calibri;
+}
+
+.btn2
+{
+    width: 30%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #364a53;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn2:hover
+{
+    padding: 15px;
+}
+
+.desc
+{
+    height: 30px;
+    width: 100%;
+    background-color: #222121;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-family: calibri;
+}
 
 
 
+
+@media(max-width: 576px)
+{
+
+.header
+{
+    padding: 0px 2%;
+}
+
+.logo
+{
+    font-size: 20px;
+    padding: 0px;
+    width: 40%;
+}
+
+.nav > ul > li
+{
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section
+{
+    height: 70px;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+}
+
+.content
+{
+    height: 80px;
+    width: 90%;
+    font-size: 20px;
+    padding: 20px 5%;
+    font-family: segoe UI;
+}
+
+.content > pre
+{
+    font-size: 25px;
+}
+
+.content > p
+{
+    font-size: 15px;
+}
+
+.btn
+{
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: segoe UI;
+    font-weight: bold;
+}
+
+.btn2
+{
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: segoe UI;
+    font-weight: bold;
+    width: 60%;
+}
+
+.ender-content
+{
+    padding: 10px ;
+    width: 60%;
+    
+}
+
+.desc
+{
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    background-color: black;
+    font-weight: bold;
+    font-style: oblique;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+}
 
 
 
